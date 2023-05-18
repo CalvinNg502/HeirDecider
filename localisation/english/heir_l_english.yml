@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ####################################
+ # Heir Selection Events English Localisation
+ # Author: WhenYouWalkin
+ ####################################
+ policy_heir_type:0 "Heir Leader Type"
+ policy_heir_type_desc:0 "This policy determines the type of leader our heir will become whenever a new heir is declared."
+ heir_type_scientist_name:0 "$heir_type_scientist$"
+ heir_type_scientist:0 "Scientist"
+ heir_type_scientist_desc:0 "Our next heir must have a brilliant mind and eager thirst for knowledge, ready to unravel the secrets of the galaxy.\n\n§EOur next heir will be a scientist.§!"
+ heir_type_governor_name:0 "$heir_type_govenor$"
+ heir_type_governor:0 "Governor"
+ heir_type_governor_desc:0 "Our next heir must be a beacon of order and prosperity, capable of efficiently organizing our planets.\n\n§EOur next heir will be a governor.§!"
+ heir_type_admiral_name:0 "$heir_type_admiral$"
+ heir_type_admiral:0 "Admiral"
+ heir_type_admiral_desc:0 "Our next heir will command hold high command in our navy and lead our ships to victory in the void.\n\n§EOur next heir will be an admiral.§!"
+ heir_type_general_name:0 "heir_type_general"
+ heir_type_general:0 "General"
+ heir_type_general_desc:0 "Our next heir will lead our troops in the trenches across a multitude of alien worlds alongside protecting our own from enemy invasion.\n\n§EOur next heir will be a general.§!"

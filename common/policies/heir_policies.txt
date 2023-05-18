@@ -1,0 +1,136 @@
+heir_type = {
+	potential = {
+		has_authority = auth_imperial
+	}
+
+	option = {
+		name = "heir_type_scientist"
+
+		policy_flags = {
+			heir_type_scientist
+		}
+
+		AI_weight = {
+			weight = 10
+
+			modifier = {
+				factor = 2
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_spiritualist
+			}
+			modifier = {
+				factor = 0.25
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+	}
+
+	option = {
+		name = "heir_type_governor"
+
+		valid = {
+			NOT = {
+				has_civic = civic_technocracy
+			}
+		}
+
+		policy_flags = {
+			heir_type_governor
+		}
+
+		AI_weight = {
+			weight = 10
+
+			modifier = {
+				factor = 2
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_pacifist
+				}
+			}
+			modifier = {
+				factor = 4
+				OR = {
+					has_ethic = ethic_fanatic_authoritarian
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "heir_type_admiral"
+
+		valid = {
+			NOT = {
+				has_civic = civic_technocracy
+			}
+		}
+
+		policy_flags = {
+			heir_type_admiral
+		}
+
+		AI_weight = {
+			weight = 10
+
+			modifier = {
+				factor = 2
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_pacifist
+			}
+			modifier = {
+				factor = 0.25
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+
+	option = {
+		name = "heir_type_general"
+
+		valid = {
+			NOT = {
+				has_civic = civic_technocracy
+			}
+		}
+
+		policy_flags = {
+			heir_type_general
+		}
+
+		AI_weight = {
+			weight = 5
+			modifier = {
+				factor = 2
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_pacifist
+			}
+			modifier = {
+				factor = 0.25
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+}

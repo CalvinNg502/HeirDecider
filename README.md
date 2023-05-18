@@ -3,6 +3,11 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Launch](#launch)
+- [Version](#version)
+- [Features](#features)
+- [Known Bugs](#known-bugs)
+- [Status](#status)
 
 ## Introduction
 
@@ -18,13 +23,13 @@ This mod solves this issue by giving the player choice over the type of leader t
 
 To actually use this mod, you must obviously have a copy of Stellaris. 
 
-The easiest way to install this mod is through the steam workshop. As I write this, the mod is not actually available on the steam workshop yet, but when it is, I will post a link here. This method only works if your copy was acquired through steam. 
+The easiest way to install this mod is through the steam workshop. You can access the steam workshop page [here](https://steamcommunity.com/sharedfiles/filedetails/?id=2977239553). This method only works if your copy was acquired through steam. 
 
 Depending on your version, the steps you take may differ greatly, but in general, each version of the game has two directories: one for the .mod file, and one for the mod directory itself. You will need to move the .mod file and the heir_decider directory into the appropriate locations, then open the .mod file (any text editor will suffice) and edit the path field to the path of the mod directory. For more help and information, [the stellaris wiki](https://stellaris.paradoxwikis.com/Mods) is a great resource for learning more about mod installation, and about stellaris modding in general.
 
 ## Version
 
-This mod was written for version 3.8.2 of Stellaris. As such, there is no guarantee that it will not break as vanilla files and directory structures may change between versions. I will keep this mod up to date and working for the foreseeable future, and the version status of the mod will be posted on the steam workshop page (to be created).
+This mod was written for version 3.8.2 of Stellaris. As such, there is no guarantee that it will not break as vanilla files and directory structures may change between versions. I will keep this mod up to date and working for the foreseeable future, and the version status of the mod will be posted on [the steam workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=2977239553).
 
 ## Features
 

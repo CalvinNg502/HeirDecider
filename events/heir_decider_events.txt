@@ -1,0 +1,47 @@
+namespace = heir_decider
+
+leader_event = {
+	id = heir_decider.1
+	hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        add_trait_no_notify = trait_imperial_heir
+        
+        if = {
+            limit = {
+                owner = {
+                    has_policy_flag = heir_type_scientist
+                }
+            }
+            change_leader_class = scientist
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_policy_flag = heir_type_governor
+                }
+            }
+            change_leader_class = governor
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_policy_flag = heir_type_admiral
+                }
+            }
+            change_leader_class = admiral
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    has_policy_flag = heir_type_general
+                }
+            }
+            change_leader_class = general
+        }
+    }
+}

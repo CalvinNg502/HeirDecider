@@ -1,5 +1,11 @@
+ ####################################
+ # Heir Selection Events
+ # Author: WhenYouWalkin
+ ####################################
+
 namespace = heir_decider
 
+# This event is called from the 'on_new_heir' on_action and handles changing the heir's type to what is specified by the policy 'Heir Leader Type'
 leader_event = {
 	id = heir_decider.1
 	hide_window = yes

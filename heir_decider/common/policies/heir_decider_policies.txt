@@ -1,3 +1,4 @@
+# This policy's flags determine what leader class the next heir will be
 heir_type = {
 	potential = {
 		has_authority = auth_imperial

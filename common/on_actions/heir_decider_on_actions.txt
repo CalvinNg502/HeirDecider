@@ -1,5 +1,0 @@
-on_new_heir = {
-	events = {
-		heir_decider.1
-	}
-}

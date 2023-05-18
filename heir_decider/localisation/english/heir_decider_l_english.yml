@@ -1,11 +1,12 @@
-﻿l_english:
-
- ####################################
- # Heir Selection Events English Localisation
+﻿ ####################################
+ # Heir Selection English Localisation
  # Author: WhenYouWalkin
  ####################################
+
+l_english:
+
  policy_heir_type:0 "Heir Leader Type"
- policy_heir_type_desc:0 "This policy determines the type of leader our heir will become whenever a new heir is declared."
+ policy_heir_type_desc:0 "Our heir shall lead the next generation of our empire, thus, it is crucial we choose an heir of the right profession wisely.\n"
  heir_type_scientist_name:0 "$heir_type_scientist$"
  heir_type_scientist:0 "Scientist"
  heir_type_scientist_desc:0 "Our next heir must have a brilliant mind and eager thirst for knowledge, ready to unravel the secrets of the galaxy.\n\n§EOur next heir will be a scientist.§!"

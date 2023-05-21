@@ -7,7 +7,7 @@
 - [Version](#version)
 - [Features](#features)
 - [Known Bugs](#known-bugs)
-- [Status](#status)
+- [Version History](#version-history)
 
 ## Introduction
 
@@ -35,11 +35,7 @@ This mod was written for version 3.8.2 of Stellaris. As such, there is no guaran
 
 The mod is quite simple. For every empire, there is always a 'policies' menu. With this mod, there is now a new feature called 'Heir Leader Type'. The policy is a list of four radio buttons. Picking one will set a flag denoting what type of leader the next heir should be. Whenever a new heir is created, a new event will run that sets the leader type to that of the selected radio button.
 
-## Known Bugs
+## Version History
 
-As bugs arise, they will be listed here, and removed once they are fixed.
-
-## Status
-
-The mod is up to date with the most recent version of Stellaris, and no bugs have been reported thus far.
-
+- v 1.0: This is the initial launch version of the mod.
+- v 1.1: Updated version that fixes a few edgecase bugs. In particular, the mod is now compatible with Crusader Spirit and Heroic Tales civics. This version also adds another option to the policy to allow for no preference (vanilla behavior).

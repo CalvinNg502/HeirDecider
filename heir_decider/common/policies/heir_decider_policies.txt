@@ -5,6 +5,39 @@ heir_type = {
 	}
 
 	option = {
+		name = "heir_type_none"
+
+		valid = {
+			NOT = {
+				has_civic = civic_technocracy
+			}
+		}
+
+
+
+		AI_weight = {
+			weight = 10
+
+			modifier = {
+				factor = 2
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 0.25
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+
+	option = {
 		name = "heir_type_scientist"
 
 		policy_flags = {

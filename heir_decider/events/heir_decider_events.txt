@@ -12,7 +12,6 @@ leader_event = {
     is_triggered_only = yes
 
     immediate = {
-        add_trait_no_notify = trait_imperial_heir
         
         if = {
             limit = {

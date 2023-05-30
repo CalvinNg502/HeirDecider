@@ -1,0 +1,100 @@
+namespace = action
+
+leader_event = {
+	id = action.504
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+	}
+
+	immediate = {
+		add_trait_no_notify = trait_imperial_heir
+
+		###############
+		# BONUS LEVEL #
+		###############
+
+		# Vaults of Memory
+		if = {
+			limit = {
+				owner = {
+					is_memory_vault_empire = yes
+				}
+			}
+			add_skill = 1
+		}
+
+		##########
+		# TRAITS #
+		##########
+
+		# Under One Rule
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_origin = origin_legendary_leader_imperial
+						ruler = { has_trait = leader_trait_legendary_offspring }
+					}
+				}
+			}
+			add_trait_no_notify = leader_trait_legendary_offspring
+		}
+
+		# Technocracy
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_technocracy
+				}
+				leader_class = scientist 
+			}
+			add_random_expertise_trait_effect = yes
+		}
+
+		# Heroic Tales
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_heroic_tales
+				}
+			}
+			add_trait_no_notify = "random_common"
+		}
+
+		# Crusader Spirit - Admiral
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_crusader_spirit
+				}
+				leader_class = admiral 
+			}
+			add_trait_no_notify = leader_trait_par_zealot
+		}
+
+		# Crusader Spirit - General
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_crusader_spirit
+				}
+				leader_class = general 
+			}
+			add_trait_no_notify = leader_trait_crusader
+		}
+
+		# Letters of Marque
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_crusader_spirit_corporate
+				}
+				leader_class = admiral 
+			}
+			add_trait_no_notify = leader_trait_corsair
+		}
+	}
+}

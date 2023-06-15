@@ -9,8 +9,9 @@ leader_event = {
 	id = heir_decider.1
 	hide_window = yes
 	is_triggered_only = yes
+
+	# change leader class
 	immediate = {
-		# change leader class
 		if = {
 			limit = {
 				owner = {
@@ -42,139 +43,6 @@ leader_event = {
 				}
 			}
 			change_leader_class = general
-		}
-        
-		# only reset leader if we are changing their class
-		if = {
-			limit = {
-				NOT = {
-					owner = {
-						has_policy_flag = heir_type_none
-					}
-				}
-			}
-			# reset leader level and traits
-			remove_all_traits = yes
-			set_skill = 1
-			# Initial Traits, set after determining class.
-			add_trait_no_notify = trait_imperial_heir
-			add_trait_no_notify = "random_common"
-			# Chance for a negative trait.
-			random_list = {
-				95 = {
-				}
-				5 = {
-					add_trait_no_notify = "random_common"
-					add_trait_no_notify = "random_negative"
-					# Variable "leader_pending_negative_traits_unmodified" doesn't exist yet, can't reduce it yet. Checked now made in paragon_2.2200.
-					modifier = {
-						factor = 0
-						owner = {
-							has_valid_civic = civic_philosopher_king
-						}
-					}
-				}
-			}
-			################
-			# BONUS LEVELS #
-			################
-			# Vaults of Memory
-			if = {
-				limit = {
-					owner = {
-						is_memory_vault_empire = yes
-					}
-				}
-				add_skill_without_trait_selection = 1
-			}
-			# Distinguished Admiralty
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_distinguished_admiralty
-					}
-					OR = {
-						leader_class = admiral
-						leader_class = general
-					}
-				}
-				add_skill_without_trait_selection = 2
-			}
-			##########
-			# TRAITS #
-			##########
-			# Under One Rule
-			if = {
-				limit = {
-					owner = {
-						OR = {
-							has_origin = origin_legendary_leader_imperial
-							ruler = {
-								has_trait = leader_trait_legendary_offspring
-							}
-						}
-					}
-				}
-				add_trait_no_notify = leader_trait_legendary_offspring
-			}
-			# Technocracy
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_technocracy
-					}
-					leader_class = scientist
-				}
-				add_random_expertise_trait_effect = yes
-			}
-			# Heroic Tales
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_heroic_tales
-					}
-				}
-				add_trait_no_notify = "random_common"
-			}
-			# Crusader Spirit - Admiral
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_crusader_spirit
-					}
-					leader_class = admiral
-				}
-				add_trait_no_notify = leader_trait_par_zealot
-			}
-			# Crusader Spirit - General
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_crusader_spirit
-					}
-					leader_class = general
-				}
-				add_trait_no_notify = leader_trait_crusader
-			}
-			# Letters of Marque
-			if = {
-				limit = {
-					owner = {
-						has_valid_civic = civic_crusader_spirit_corporate
-					}
-					leader_class = admiral
-				}
-				add_trait_no_notify = leader_trait_corsair
-			}
-			# Aptitude Traditions
-			if = {
-				limit = {
-					owner = {
-						has_tradition = tr_aptitude_adopt
-					}
-				}
-				add_trait_no_notify = "random_common"
-			}
 		}
 	}
 }

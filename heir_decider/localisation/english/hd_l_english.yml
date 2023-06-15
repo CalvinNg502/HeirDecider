@@ -8,6 +8,7 @@ l_english:
  
  policy_heir_type:0 "Heir Leader Type"
  policy_heir_type_desc:0 "Our heir shall lead the next generation of our empire, thus, it is crucial we choose an heir of the right profession wisely.\n"
+ heir_type_none_name:0 "$heir_type_none$"
  heir_type_none:0 "No Preference"
  heir_type_none_desc:0 "It is not up to us to decide the future of our next heir; their future is theirs to determine.\n\n§EOur next heir will be random (default vanilla behavior).§!"
  heir_type_scientist_name:0 "$heir_type_scientist$"

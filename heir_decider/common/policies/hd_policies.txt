@@ -7,14 +7,6 @@ heir_type = {
 	option = {
 		name = "heir_type_none"
 
-		valid = {
-			NOT = {
-				has_civic = civic_technocracy
-			}
-		}
-
-
-
 		AI_weight = {
 			weight = 10
 
@@ -69,12 +61,6 @@ heir_type = {
 	option = {
 		name = "heir_type_governor"
 
-		valid = {
-			NOT = {
-				has_civic = civic_technocracy
-			}
-		}
-
 		policy_flags = {
 			heir_type_governor
 		}
@@ -101,12 +87,6 @@ heir_type = {
 
 	option = {
 		name = "heir_type_admiral"
-
-		valid = {
-			NOT = {
-				has_civic = civic_technocracy
-			}
-		}
 
 		policy_flags = {
 			heir_type_admiral
@@ -136,12 +116,6 @@ heir_type = {
 
 	option = {
 		name = "heir_type_general"
-
-		valid = {
-			NOT = {
-				has_civic = civic_technocracy
-			}
-		}
 
 		policy_flags = {
 			heir_type_general

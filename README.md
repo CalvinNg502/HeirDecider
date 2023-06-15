@@ -25,7 +25,7 @@ To actually use this mod, you must obviously have a copy of Stellaris.
 
 The easiest way to install this mod is through the steam workshop. You can access the steam workshop page [here](https://steamcommunity.com/sharedfiles/filedetails/?id=2977239553). This method only works if your copy was acquired through steam. 
 
-Depending on your version, the steps you take may differ greatly, but in general, each version of the game has two directories: one for the .mod file, and one for the mod directory itself. You will need to move the .mod file and the heir_decider directory into the appropriate locations, then open the .mod file (any text editor will suffice) and edit the path field to the path of the mod directory. For more help and information, [the stellaris wiki](https://stellaris.paradoxwikis.com/Mods) is a great resource for learning more about mod installation, and about stellaris modding in general.
+Depending on your version, the steps you take may differ greatly, but in general, each version of the game has two directories: one for the .mod file, and one for the mod directory itself. You will need to move the .mod file and the heir_decider directory into the appropriate locations, then open the .mod file (any text editor will suffice) and edit the path field to the path of the mod directory. For more help and information, [the stellaris wiki](https://stellaris.paradoxwikis.com/Mods) is a great resource for learning more about mod installation and about stellaris modding in general.
 
 ## Version
 
@@ -40,3 +40,4 @@ The mod is quite simple. For every empire, there is always a 'policies' menu. Wi
 - v 1.0: This is the initial launch version of the mod.
 - v 1.1: Updated version that fixes a few edgecase bugs. In particular, the mod is now compatible with Crusader Spirit and Heroic Tales civics. This version also adds another option to the policy to allow for no preference (vanilla behavior).
 - v 1.1.1: Updated for version 3.8.3. Renamed a lot of files in the mod, too.
+- v 1.1.2: Updated for version 3.8.4.

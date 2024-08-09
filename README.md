@@ -15,7 +15,7 @@ This repository stores code for a mod (modification) for the video game 'Stellar
 
 First, I'll introduce the problem this mod seeks to solve. In a game of stellaris, you get to design your empire, and one of the options you can choose is your empire's government type. One such type is imperial, and a unique property of it is that it has an heir, a leader that the game spawns of a random class whenever the empire finds itself without an heir.
 
-The problem is the player has no control of the class of this leader. In Stellaris, there are four different leader classes: scientists, governors, admirals, and generals. So, if the heir spawns as an undesireable leader class, there is currently nothing the player can do about this. As an example, generals are commonly thought to be the most useless leader class, so being forced to have one is usually not ideal. Leaders cost resources to maintain, so not having control over the heir leader type is actually a significant problem for imperial empires.
+The problem is the player has no control of the class of this leader. In Stellaris, there are three different leader classes: scientists, officials, and commanders. So, if the heir spawns as an undesireable leader class, there is currently nothing the player can do about this. Leaders cost resources to maintain, so not having control over the heir leader type is actually a significant problem for imperial empires. When this mod was first written, commanders didn't exist and admirals and generals existed instead. Generals were considered very bad to have, especially early in the game. The issue of 'rolling' a general is the main reason why I wrote this mod to begin with.
 
 This mod solves this issue by giving the player choice over the type of leader their heir will be. I will go into more details of the solution in the features section.
 
@@ -29,7 +29,7 @@ Depending on your version, the steps you take may differ greatly, but in general
 
 ## Version
 
-This mod was written for version 3.8.2 of Stellaris. As such, there is no guarantee that it will not break as vanilla files and directory structures may change between versions. I will keep this mod up to date and working for the foreseeable future, and the version status of the mod will be posted on [the steam workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=2977239553).
+The original mod was written for version 3.8.2 of Stellaris. As such, there is no guarantee that it will not break as vanilla files and directory structures may change between versions. I will keep this mod up to date and working for the foreseeable future, and the version status of the mod will be posted on [the steam workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=2977239553).
 
 ## Features
 
@@ -41,3 +41,5 @@ The mod is quite simple. For every empire, there is always a 'policies' menu. Wi
 - v 1.1: Updated version that fixes a few edgecase bugs. In particular, the mod is now compatible with Crusader Spirit and Heroic Tales civics. This version also adds another option to the policy to allow for no preference (vanilla behavior).
 - v 1.1.1: Updated for version 3.8.3. Renamed a lot of files in the mod, too.
 - v 1.1.2: Updated for version 3.8.4.
+- v 1.1.3: Updated for version 3.9
+- v 1.2: Updated for version 3.12.*. This is the first version since the leader rework to scientist, officials, and commanders.

@@ -1,13 +1,14 @@
 ####################################
-# Heir Selection On_Action Override
+# Heir Selection Leader Events Override
 # Author: WhenYouWalkin
 ####################################
 
-namespace = action
+namespace = leader
 
 # New heir appointed; very similar to vanilla, but adjust the class randomiser so it only fires if heir policy is set to none
+# New heir appointed
 leader_event = {
-	id = action.504
+	id = leader.200
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -29,31 +30,32 @@ leader_event = {
 		# CLASS RANDOMISER #
 		####################
 
+		# Set skill level to 1
+		set_skill = 1
+		# Add generic level modifiers
+		add_skill_without_trait_selection = owner.modifier:leader_initial_skill
+
 		if = {
 			limit = {
 				owner = {
 					AND = {
 						OR = {
-						# Admiral
-						has_valid_civic = civic_crusader_spirit_corporate
-						has_tradition = tr_supremacy_war_games
-						# Admiral and General
-						has_valid_civic = civic_distinguished_admiralty
-						has_valid_civic = civic_crusader_spirit
-						# Governor
-						has_valid_civic = civic_aristocratic_elite
-						has_valid_civic = civic_feudal_realm
-						has_tradition = tr_domination_colonial_viceroys
-						# Scientist
-						has_valid_civic = civic_technocracy
-						has_tradition = tr_discovery_science_division
-						# Current Ruler's Class
-						has_valid_civic = civic_philosopher_king
+							# Commander
+							has_valid_civic = civic_crusader_spirit_corporate
+							has_tradition = tr_supremacy_war_games
+							has_valid_civic = civic_distinguished_admiralty
+							has_valid_civic = civic_crusader_spirit
+							# Official
+							has_valid_civic = civic_aristocratic_elite
+							has_tradition = tr_domination_colonial_viceroys
+							# Scientist
+							has_valid_civic = civic_technocracy
+							has_tradition = tr_discovery_science_division
+							# Current Ruler's Class
+							has_valid_civic = civic_philosopher_king
 						}
-						
 						has_policy_flag = heir_type_none
 					}
-					
 				}
 			}
 
@@ -63,26 +65,21 @@ leader_event = {
 			# Traditions that boost a class add 20.
 
 			random_list = {
-				# Admiral
+				# Commander
 				0 = {
 					modifier = {
-						add = value:heir_class_weight_admiral
+						add = value:heir_class_weight_commander
 					}
-					change_leader_class = admiral
+					change_leader_class = commander
+					add_skill_without_trait_selection = owner.modifier:commander_initial_skill
 				}
-				# General
+				# Official
 				0 = {
 					modifier = {
-						add = value:heir_class_weight_general
+						add = value:heir_class_weight_official
 					}
-					change_leader_class = general
-				}
-				# Governor
-				0 = {
-					modifier = {
-						add = value:heir_class_weight_governor
-					}
-					change_leader_class = governor
+					change_leader_class = official
+					add_skill_without_trait_selection = owner.modifier:official_initial_skill
 				}
 				# Scientist
 				0 = {
@@ -90,9 +87,14 @@ leader_event = {
 						add = value:heir_class_weight_scientist
 					}
 					change_leader_class = scientist
+					add_skill_without_trait_selection = owner.modifier:scientist_initial_skill
 				}
 			}
 		}
+
+		##########
+		# TRAITS #
+		##########
 
 		# Initial Traits, set after determining class.
 		add_trait_no_notify = trait_imperial_heir
@@ -111,38 +113,6 @@ leader_event = {
 				}
 			}
 		}
-
-		################
-		# BONUS LEVELS #
-		################
-
-		# Vaults of Memory
-		if = {
-			limit = {
-				owner = {
-					is_memory_vault_empire = yes
-				}
-			}
-			add_skill_without_trait_selection = 1
-		}
-
-		# Distinguished Admiralty
-		if = {
-			limit = {
-				owner = {
-					has_valid_civic = civic_distinguished_admiralty
-				}
-				OR = {
-					leader_class = admiral
-					leader_class = general
-				}
-			}
-			add_skill_without_trait_selection = 2
-		}
-
-		##########
-		# TRAITS #
-		##########
 
 		# Under One Rule
 		if = {
@@ -163,39 +133,18 @@ leader_event = {
 				owner = {
 					has_valid_civic = civic_technocracy
 				}
-				leader_class = scientist 
+				leader_class = scientist
 			}
 			add_random_expertise_trait_effect = yes
 		}
 
-		# Heroic Tales
-		if = {
-			limit = {
-				owner = {
-					has_valid_civic = civic_heroic_tales
-				}
-			}
-			add_trait_no_notify = "random_common"
-		}
-
-		# Crusader Spirit - Admiral
+		# Crusader Spirit
 		if = {
 			limit = {
 				owner = {
 					has_valid_civic = civic_crusader_spirit
 				}
-				leader_class = admiral 
-			}
-			add_trait_no_notify = leader_trait_par_zealot
-		}
-
-		# Crusader Spirit - General
-		if = {
-			limit = {
-				owner = {
-					has_valid_civic = civic_crusader_spirit
-				}
-				leader_class = general 
+				leader_class = commander
 			}
 			add_trait_no_notify = leader_trait_crusader
 		}
@@ -206,19 +155,9 @@ leader_event = {
 				owner = {
 					has_valid_civic = civic_crusader_spirit_corporate
 				}
-				leader_class = admiral 
+				leader_class = commander
 			}
 			add_trait_no_notify = leader_trait_corsair
-		}
-
-		# Aptitude Traditions
-		if = {
-			limit = {
-				owner = {
-					has_tradition = tr_aptitude_adopt
-				}
-			}
-			add_trait_no_notify = "random_common"
 		}
 	}
 }

@@ -59,10 +59,10 @@ heir_type = {
 	}
 
 	option = {
-		name = "heir_type_governor"
+		name = "heir_type_official"
 
 		policy_flags = {
-			heir_type_governor
+			heir_type_official
 		}
 
 		AI_weight = {
@@ -86,43 +86,15 @@ heir_type = {
 	}
 
 	option = {
-		name = "heir_type_admiral"
+		name = "heir_type_commander"
 
 		policy_flags = {
-			heir_type_admiral
+			heir_type_commander
 		}
 
 		AI_weight = {
 			weight = 10
 
-			modifier = {
-				factor = 2
-				has_ethic = ethic_militarist
-			}
-			modifier = {
-				factor = 4
-				has_ethic = ethic_fanatic_militarist
-			}
-			modifier = {
-				factor = 0.5
-				has_ethic = ethic_pacifist
-			}
-			modifier = {
-				factor = 0.25
-				has_ethic = ethic_fanatic_pacifist
-			}
-		}
-	}
-
-	option = {
-		name = "heir_type_general"
-
-		policy_flags = {
-			heir_type_general
-		}
-
-		AI_weight = {
-			weight = 5
 			modifier = {
 				factor = 2
 				has_ethic = ethic_militarist

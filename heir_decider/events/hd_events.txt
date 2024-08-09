@@ -23,26 +23,18 @@ leader_event = {
 		if = {
 			limit = {
 				owner = {
-					has_policy_flag = heir_type_governor
+					has_policy_flag = heir_type_official
 				}
 			}
-			change_leader_class = governor
+			change_leader_class = official
 		}
 		if = {
 			limit = {
 				owner = {
-					has_policy_flag = heir_type_admiral
+					has_policy_flag = heir_type_commander
 				}
 			}
-			change_leader_class = admiral
-		}
-		if = {
-			limit = {
-				owner = {
-					has_policy_flag = heir_type_general
-				}
-			}
-			change_leader_class = general
+			change_leader_class = commander
 		}
 	}
 }

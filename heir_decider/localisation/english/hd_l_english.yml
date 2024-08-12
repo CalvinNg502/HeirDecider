@@ -18,5 +18,5 @@ l_english:
  heir_type_official:0 "Official"
  heir_type_official_desc:0 "Our next heir must be a beacon of order and prosperity, capable of efficiently organizing our planets and navigating the perilous political landscape of the galaxy.\n\n§EOur next heir will be an official.§!"
  heir_type_commander_name:0 "$heir_type_commander$"
- heir_type_commander:0 "Admiral"
+ heir_type_commander:0 "Commander"
  heir_type_commander_desc:0 "Our next heir must possess a sharp military mind, one that will lead us to victory over our enemies.\n\n§EOur next heir will be a commander.§!"

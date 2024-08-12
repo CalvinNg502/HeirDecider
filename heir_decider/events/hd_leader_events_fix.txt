@@ -6,7 +6,6 @@
 namespace = leader
 
 # New heir appointed; very similar to vanilla, but adjust the class randomiser so it only fires if heir policy is set to none
-# New heir appointed
 leader_event = {
 	id = leader.200
 	hide_window = yes

@@ -41,6 +41,7 @@ The mod is quite simple. For every empire, there is always a 'policies' menu. Wi
 - v 1.1: Updated version that fixes a few edgecase bugs. In particular, the mod is now compatible with Crusader Spirit and Heroic Tales civics. This version also adds another option to the policy to allow for no preference (vanilla behavior).
 - v 1.1.1: Updated for version 3.8.3. Renamed a lot of files in the mod, too.
 - v 1.1.2: Updated for version 3.8.4.
-- v 1.1.3: Updated for version 3.9
+- v 1.1.3: Updated for version 3.9.
 - v 1.2: Updated for version 3.12.*. This is the first version since the leader rework to scientist, officials, and commanders.
 - v 1.2.1: Fixed an error in the localisation.
+- v 1.2.2: Updated for version 4.0.x.

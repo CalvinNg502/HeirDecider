@@ -1,4 +1,5 @@
 # Modify the weights to be 0 if a type of another class is chosen. This way, when class is rerolled, if a preference is set, the other two types have a chance of 0 to roll, guaranteeing the preference wins the roll. Benefit of doing it this way is these weights change less frequently than leader.200 event, so less likely for mod to be deprecated between versions
+
 heir_class_weight_commander = {
 	base = 10
 	modifier = {

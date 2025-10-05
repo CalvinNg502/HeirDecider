@@ -1,6 +1,0 @@
-# adds a new custom event to the on_action 'on_new_heir', which calls all its events when a new heir is named.
-on_new_heir = {
-	events = {
-		heir_decider.1
-	}
-}

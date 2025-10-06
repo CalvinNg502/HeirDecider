@@ -1,0 +1,40 @@
+####################################
+# Heir Selection Events
+# Author: WhenYouWalkin
+####################################
+namespace = heir_decider
+
+# This event is called from the 'on_new_heir' on_action and handles changing the heir's type to what is specified by the policy 'Heir Leader Type'
+leader_event = {
+	id = heir_decider.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	# change leader class
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_policy_flag = heir_type_scientist
+				}
+			}
+			change_leader_class = scientist
+		}
+		if = {
+			limit = {
+				owner = {
+					has_policy_flag = heir_type_official
+				}
+			}
+			change_leader_class = official
+		}
+		if = {
+			limit = {
+				owner = {
+					has_policy_flag = heir_type_commander
+				}
+			}
+			change_leader_class = commander
+		}
+	}
+}

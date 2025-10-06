@@ -4,6 +4,8 @@
  ####################################
 
 l_english:
+
+ 
  policy_heir_type:0 "Heir Leader Type"
  policy_heir_type_desc:0 "Our heir shall lead the next generation of our empire, thus, it is crucial we choose an heir of the right profession wisely.\n"
  heir_type_none_name:0 "$heir_type_none$"

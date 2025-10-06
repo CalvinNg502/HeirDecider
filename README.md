@@ -45,3 +45,5 @@ The mod is quite simple. For every empire, there is always a 'policies' menu. Wi
 - v 1.2: Updated for version 3.12.*. This is the first version since the leader rework to scientist, officials, and commanders.
 - v 1.2.1: Fixed an error in the localisation.
 - v 1.2.2: Updated for version 4.0.x.
+- v 1.2.3: Updated for version 4.1.x.
+- v 1.2.4: Fixed bug in new logic (attempt to streamline process caused mod not to work under some circumstancess).
